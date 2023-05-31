@@ -1,0 +1,6 @@
+header {
+    background-image: url('manchots.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* Ajustez cette valeur en fonction de la taille de votre image */
+}
