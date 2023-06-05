@@ -9,10 +9,15 @@ header {
     align-items: center;
     padding: 10px;
 
-    background-image: url('../img/manchots.jpg');
+    background-image: url('../img/manchots.webp');
     background-size: cover;
     background-position: center;
     height: 100%; /* Ajustez cette valeur en fonction de la taille de votre image */
+
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
 }
 
 /* Styles généraux */
@@ -29,13 +34,7 @@ body {
 }
   
 /* En-tête */
-header {
-    background-color: #333;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-}
-  
+
 h1 {
     font-size: 36px;
     /* margin-bottom: 10px; */
@@ -135,13 +134,10 @@ a:hover {
     position: absolute;
     top: 20px;
     left: 20px;
-  }
-
-
-article img {
-    display: block;
-    margin: 0 auto;
 }
+
+
+
 
 .row {
     display: flex;
@@ -154,6 +150,40 @@ figure {
     margin: 0 auto;
 }
 
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+article h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+  
+article img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+article figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 14px;
+    color: #777;
+}
 
 
 @media screen and (max-width: 768px) {
