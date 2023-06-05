@@ -1,4 +1,14 @@
+@font-face {
+	font-family: Penguin;
+	src: url(../Penguin-Regular.ttf);
+}
+
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
     background-image: url('../img/manchots.jpg');
     background-size: cover;
     background-position: center;
@@ -11,7 +21,7 @@ body {
     background-color: #f3f3f3;
     color: #333;
 }
-  
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -28,14 +38,32 @@ header {
   
 h1 {
     font-size: 36px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    font-family: "Penguin";
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    padding-top: 10px;
+    background-color: #66666669;
 }
   
   /* Navigation */
 nav {
     margin-top: 20px;
 }
+
+ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
   
+li {
+    margin: 0 10px;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -82,6 +110,13 @@ footer {
     background-color: #333;
     color: #fff;
 }
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+  
   
   /* Liens */
 a {
@@ -94,20 +129,45 @@ a:hover {
 }
   
 .logo {
+    max-width: 100%;
     width: 60px; /* Ajustez la taille du logo selon vos besoins */
     height: auto;
     position: absolute;
     top: 20px;
     left: 20px;
   }
-  
-@media screen and (max-width: 768px) {
-    .logo {
-        width: 30px; /* Ajustez la taille du logo pour les écrans plus petits */
-    }
-}
+
 
 article img {
     display: block;
     margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+  
+figure {
+    flex: 50%;
+    padding: 5px;
+    max-width: 30%; /* Ajustez la largeur maximale selon vos besoins */
+    margin: 0 auto;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 30px; /* Ajustez la taille du logo pour les écrans plus petits */
+    }
+
+    ul {
+        display: contents;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
 }
