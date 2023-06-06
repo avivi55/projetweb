@@ -12,7 +12,7 @@
     <h1>Les Manchots</h1>
     <nav>
       <ul>
-        <li><a class="current_win" href="./index.html">Accueil</a></li>
+        <li><a href="../index.html">Accueil</a></li>
         <li><a href="./article_confusion_nom.html">La confusion du nom</a></li>
 
         <li><a href="./aptenodytes.html">Aptenodytes</a></li>
@@ -22,13 +22,45 @@
         <li><a href="./megadyptes.html">Megadyptes</a></li>
         <li><a href="./eudyptes.html">Eudyptes</a></li>
 
-        <li><a href="./quiz.html">Quel est ton manchot ?</a></li>
+        <li><a class="current_win" href="./quiz.html">Quel est ton manchot ?</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+    <form method="post" action="#">
 
+      <fieldset name="pseudo">
+        <legend>Pseudo pour le score</legend>
+
+        <label for="for">Pseudo</label>
+        <input type="text">
+      </fieldset>
+
+      <fieldset name="q1">
+        <legend>Question n°1</legend>
+
+        <label for="for">De quelle espèce est ce manchot ?</label>
+        
+        <br>
+        <img src="../img/wiki/File:137_-_Cap_Virgenes_-_Manchot_de_Magellan_-_Janvier_2010.JPG" width="200">
+        <br>
+
+        <select id="categorie">
+          <option value="">--Veuillez choisir l'espece --</option>
+
+          <option value="Usage personnel">Spheniscus (manchot à bande noir)</option>
+          <option value="Usage professionel">Aptenodytes (grand manchot)</option>
+          <option value="Usage mixte">Eudyptula (petit manchot)</option>
+        </select>
+      </fieldset>
+
+      <fieldset name="info3">
+        <legend>Decouvre tes points</legend>
+
+        <input class="btn" type="submit" value="Resultats" onclick="generer()">
+      </fieldset>
+    </form>
   </main>
 
   <footer>

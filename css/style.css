@@ -26,12 +26,6 @@ body {
     background-color: #f3f3f3;
     color: #333;
 }
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
   
 /* En-tête */
 
@@ -47,7 +41,7 @@ h1 {
     background-color: #66666669;
 }
   
-  /* Navigation */
+/* Navigation */
 nav {
     margin-top: 20px;
 }
@@ -86,7 +80,7 @@ nav ul li a:hover {
     background-color: #444;
 }
   
-  /* Contenu principal */
+/* Contenu principal */
 main {
     margin-top: 20px;
 }
@@ -101,7 +95,7 @@ p {
     text-align:justify;
 }
   
-  /* Pied de page */
+/* Pied de page */
 footer {
     margin-top: 20px;
     padding: 10px;
@@ -117,7 +111,7 @@ footer nav ul {
 }
   
   
-  /* Liens */
+/* Liens */
 a {
     color: #333;
     text-decoration: none;
@@ -197,6 +191,7 @@ article figcaption {
 
 .current_win {
     background-color: #070707;
+    border: 1px solid white;
 }
 
 
@@ -247,4 +242,59 @@ article tr:nth-child(even) {
     article th, article td {
         min-width: 150px;
     }
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form img {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #555;
 }
