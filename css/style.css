@@ -53,7 +53,6 @@ nav {
 }
 
 ul {
-    display: flex;
     justify-content: center;
     padding: 0;
     list-style: none;
@@ -72,6 +71,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin-right: 10px;
+    margin-bottom: 20px;
 }
   
 nav ul li a {
@@ -136,9 +136,6 @@ a:hover {
     left: 20px;
 }
 
-
-
-
 .row {
     display: flex;
 }
@@ -156,6 +153,19 @@ article {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+article ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+article ul ul{
+    list-style: disc;
+    padding: 0;
+    margin: 0;
 }
   
 article h2 {
@@ -185,10 +195,36 @@ article figcaption {
     color: #777;
 }
 
+.current_win {
+    background-color: #070707;
+}
+
+
+article table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 7px;
+    overflow: auto;
+}
+  
+article th, article td {
+    padding: 10px;
+    text-align: left;
+}
+  
+article th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+  
+article tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
 
 @media screen and (max-width: 768px) {
     .logo {
-        width: 30px; /* Ajustez la taille du logo pour les écrans plus petits */
+        width: 0px; /* Ajustez la taille du logo pour les écrans plus petits */
     }
 
     ul {
@@ -199,5 +235,16 @@ article figcaption {
         display: inline-block;
         margin-right: 10px;
         margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    article table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+  
+    article th, article td {
+        min-width: 150px;
     }
 }
