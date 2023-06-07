@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quel est ton manchot ?</title>
+  <title>Quiz Manchot</title>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/quiz.css">
+  <script type="text/javascript" src="../js/form.js"></script>
 </head>
 <body>
   <header>
@@ -22,22 +24,21 @@
         <li><a href="./megadyptes.html">Megadyptes</a></li>
         <li><a href="./eudyptes.html">Eudyptes</a></li>
 
-        <li><a class="current_win" href="./quiz.html">Quel est ton manchot ?</a></li>
+        <li><a class="current_win" href="./quiz.html">Quiz Manchot</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <form method="post" action="#">
+    <form method="post" action="#" name="quiz">
 
-      <fieldset name="pseudo">
-        <legend>Pseudo pour le score</legend>
+      <legend>Pseudo pour le score</legend>
+      <input type="text" id="pseudo">
 
-        <label for="for">Pseudo</label>
-        <input type="text">
-      </fieldset>
+      <br/>
+      <br/>
 
-      <fieldset name="q1">
+      <fieldset>
         <legend>Question n°1</legend>
 
         <label for="for">De quelle espèce est ce manchot ?</label>
@@ -46,20 +47,20 @@
         <img src="../img/wiki/File:137_-_Cap_Virgenes_-_Manchot_de_Magellan_-_Janvier_2010.JPG" width="200">
         <br>
 
-        <select id="categorie">
-          <option value="">--Veuillez choisir l'espece --</option>
+        <select id="q1">
+          <option value="question">--Veuillez choisir l'espece --</option>
 
-          <option value="Usage personnel">Spheniscus (manchot à bande noir)</option>
-          <option value="Usage professionel">Aptenodytes (grand manchot)</option>
-          <option value="Usage mixte">Eudyptula (petit manchot)</option>
+          <option value="1">Spheniscus (manchot à bande noir)</option>
+          <option value="0">Aptenodytes (grand manchot)</option>
+          <option value="0">Eudyptula (petit manchot)</option>
         </select>
       </fieldset>
 
-      <fieldset name="info3">
-        <legend>Decouvre tes points</legend>
+      
+      <legend>Decouvre tes points</legend>
 
-        <input class="btn" type="submit" value="Resultats" onclick="generer()">
-      </fieldset>
+      <input class="btn" type="button" value="Resultats" onclick="getScore()">
+      
     </form>
   </main>
 

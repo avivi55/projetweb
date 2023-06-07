@@ -12,7 +12,7 @@ header {
     background-image: url('../img/manchots.webp');
     background-size: cover;
     background-position: center;
-    height: 100%; /* Ajustez cette valeur en fonction de la taille de votre image */
+    height: 100%;
 
     background-color: #333;
     padding: 20px;
@@ -20,18 +20,18 @@ header {
     text-align: center;
 }
 
-/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
     background-color: #f3f3f3;
     color: #333;
 }
-  
-/* En-tête */
+
+main {
+    margin-top: 20px;
+}
 
 h1 {
     font-size: 36px;
-    /* margin-bottom: 10px; */
     font-family: "Penguin";
     color: #fff;
     text-decoration: none;
@@ -40,10 +40,32 @@ h1 {
     padding-top: 10px;
     background-color: #66666669;
 }
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
   
-/* Navigation */
-nav {
-    margin-top: 20px;
+p {
+    margin-bottom: 20px;
+    text-align:justify;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+  
+a {
+    color: #333;
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
 }
 
 ul {
@@ -54,6 +76,10 @@ ul {
   
 li {
     margin: 0 10px;
+}
+
+nav {
+    margin-top: 20px;
 }
 
 nav ul {
@@ -79,23 +105,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #444;
 }
-  
-/* Contenu principal */
-main {
-    margin-top: 20px;
-}
 
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-  
-p {
-    margin-bottom: 20px;
-    text-align:justify;
-}
-  
-/* Pied de page */
 footer {
     margin-top: 20px;
     padding: 10px;
@@ -110,83 +120,13 @@ footer nav ul {
     list-style: none;
 }
   
-  
-/* Liens */
-a {
-    color: #333;
-    text-decoration: none;
-}
-  
-a:hover {
-    text-decoration: underline;
-}
-  
 .logo {
     max-width: 100%;
-    width: 60px; /* Ajustez la taille du logo selon vos besoins */
+    width: 60px;
     height: auto;
     position: absolute;
     top: 20px;
     left: 20px;
-}
-
-.row {
-    display: flex;
-}
-  
-figure {
-    flex: 50%;
-    padding: 5px;
-    max-width: 30%; /* Ajustez la largeur maximale selon vos besoins */
-    margin: 0 auto;
-}
-
-
-article {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-article ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-article ul ul{
-    list-style: disc;
-    padding: 0;
-    margin: 0;
-}
-  
-article h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-  
-article p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-  
-article img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-  
-article figcaption {
-    text-align: center;
-    margin-top: 10px;
-    font-style: italic;
-    font-size: 14px;
-    color: #777;
 }
 
 .current_win {
@@ -194,32 +134,11 @@ article figcaption {
     border: 1px solid white;
 }
 
-
-article table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 7px;
-    overflow: auto;
-}
-  
-article th, article td {
-    padding: 10px;
-    text-align: left;
-}
-  
-article th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-}
-  
-article tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
+/* Responsive*/
 
 @media screen and (max-width: 768px) {
     .logo {
-        width: 0px; /* Ajustez la taille du logo pour les écrans plus petits */
+        width: 0px;
     }
 
     ul {
@@ -232,69 +151,4 @@ article tr:nth-child(even) {
         margin-top: 20px;
         margin-bottom: 0px;
     }
-
-    article table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-  
-    article th, article td {
-        min-width: 150px;
-    }
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-fieldset {
-    margin-bottom: 20px;
-}
-
-legend {
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="text"], select {
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-form img {
-    display: block;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #555;
 }
