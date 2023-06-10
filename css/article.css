@@ -1,0 +1,96 @@
+.row {
+    display: flex;
+}
+  
+figure {
+    flex: 50%;
+    padding: 5px;
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+article ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+article ul ul{
+    list-style: disc;
+}
+  
+article h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+  
+article img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+article figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 14px;
+    color: #777;
+}
+
+article table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 7px;
+    overflow: auto;
+}
+  
+article th, article td {
+    padding: 10px;
+    text-align: center;
+}
+  
+article th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+  
+article tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+article table tr td{
+    max-width: 300px;
+}
+
+article table tr td p {
+    display: inline-block;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 768px) {
+    article table {
+        display: block;
+        overflow-x: auto;
+        /* white-space: nowrap; */
+    }
+
+    article table th{
+        max-height: 10px;
+        min-width: 300px;
+    }
+/*     
+    article th, article td {
+        min-width: 150px;
+    } */
+}
