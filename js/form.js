@@ -7,10 +7,10 @@ function getScore() {
         "pseudo" : document.getElementById("pseudo").value,
     }
 
-    if (form.pseudo === "") {
-        alert("Mettez un pseudo")
-        return
-    }
+    // if (form.pseudo === "") {
+    //     alert("Mettez un pseudo")
+    //     return
+    // }
 
     let score = 0
 
@@ -22,6 +22,8 @@ function getScore() {
             score++;
         }
     }
+
+    
 
     alert(`Vous avez eu ${score} points`)
 }
