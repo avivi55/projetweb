@@ -32,11 +32,11 @@
   <main>
     <form method="post" action="#" name="quiz">
 
-      <legend>Pseudo pour le score</legend>
+      <!-- <legend>Pseudo pour le score</legend>
       <input type="text" id="pseudo" required>
 
       <br/>
-      <br/>
+      <br/> -->
 
       <fieldset>
         <legend>Question n°1</legend>
@@ -47,20 +47,82 @@
         <img src="../img/wiki/File:137_-_Cap_Virgenes_-_Manchot_de_Magellan_-_Janvier_2010.JPG" width="200">
         <br>
 
-        <select id="q1">
-          <option value="question">--Veuillez choisir l'espece --</option>
+        <select id="q1" required>
+          <option value="">--Veuillez choisir l'espece --</option>
 
           <option value="1">Spheniscus (manchot à bande noir)</option>
           <option value="0">Aptenodytes (grand manchot)</option>
           <option value="0">Eudyptula (petit manchot)</option>
         </select>
       </fieldset>
+      
+      <fieldset>
+        <legend>Question n°2</legend>
 
+        <label for="for">Pourquoi dit on manchot et pas pingouin ?</label>
+
+        <select id="q2" required>
+          <option value="">--Veuillez choisir--</option>
+
+          <option value="0">Parce que c'est plus joli</option>
+          <option value="0">Car ils n'ont pas de bras</option>
+          <option value="1">Parce que la France est le seul pays logique</option>
+        </select>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Question n°3</legend>
+
+        <label for="for">Où habite naturellement une partie des manchots ?</label>
+
+        <select id="q3" required>
+          <option value="">--Veuillez choisir--</option>
+
+          <option value="0">En France</option>
+          <option value="0">En sibérie</option>
+          <option value="0">Au pôle nord</option>
+          <option value="1">En Amérique du sud</option>
+        </select>
+      </fieldset>
+      
+      
+      <fieldset>
+        <legend>Question n°4</legend>
+
+        <label for="for">Une espèce de manchot est appelé macaroni.</label>
+
+        <select id="q4" required>
+          <option value="">--Veuillez choisir--</option>
+
+          <option value="1">Vrai</option>
+          <option value="0">Faux</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Question n°5</legend>
+
+        <label for="for">Quel système d'opération utilise ce manchot comme nom ?</label>
+        <img src="../img/wiki/penguin_quiz.jpg" width="200">
+        <i>Manchot papou</i>
+        <br>
+        <br>
+
+        <select id="q5" required>
+          <option value="">--Veuillez choisir--</option>
+
+          <option value="0">Ubuntu Linux</option>
+          <option value="1">Gentoo Linux</option>
+          <option value="0">Adélie Linux</option>
+          <option value="0">Arch Linux btw</option>
+        </select>
+      </fieldset>
+
+      <br>
+      <br>
       
       <legend>Decouvre tes points</legend>
-
       <input class="btn" type="submit" value="Resultats" onclick="getScore()">
-      
     </form>
   </main>
 
