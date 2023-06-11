@@ -9,6 +9,10 @@ figure {
     margin: 0 auto;
 }
 
+figure img {
+    width: 70%;
+}
+
 article ul {
     list-style: none;
     padding: 0;

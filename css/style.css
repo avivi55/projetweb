@@ -9,7 +9,7 @@ header {
     align-items: center;
     padding: 10px;
 
-    background-image: url('../img/manchots.webp');
+    background-image: url('../img/fond_de_page.webp');
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -80,6 +80,7 @@ li {
 
 nav {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 nav ul {
@@ -105,6 +106,19 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #444;
 }
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #666;
+}
+  
+nav a:hover {
+    background-color: #444;
+}
+
 
 footer {
     margin-top: 20px;
